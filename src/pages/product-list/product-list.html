@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>{{pageTitle}}</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="goToHomePage()"><ion-icon name="mic" color="light"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 *ngFor="let product of products">
+        <ion-list lines="none">
+          <ion-item>
+              <ion-row (click)="showProduct(product)">
+                  <ion-col col-3>
+                    <div class="bundle-products-image-container">
+                        <img [src] = "product.image"/>
+                    </div>
+                  </ion-col>
+                  <ion-col col-9>
+                    <div class="right-container">
+                      <div class="row">
+                        <span class="list-product-title">
+                            {{product.name}}
+                        </span>
+                      </div>
+                      <div class="row">
+                        <span class="buying-price">$ 8999</span>
+                        <span class="letter-space"></span>
+                        <span class="old-price text-secondary text-strike">
+                          $ 11999
+                        </span>
+                        <span class="letter-space"></span>
+                        <span class="save-price">
+                          Save 2000
+                        </span>
+                      </div>
+                      <div class="row star-icons">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                        <span>
+                          <a href="#">(243)</a>
+                        </span>
+                      </div>
+                      
+                    </div>
+                  </ion-col>
+                </ion-row>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

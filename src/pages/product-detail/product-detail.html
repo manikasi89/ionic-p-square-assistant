@@ -1,0 +1,266 @@
+<!--
+  Generated template for the ProductDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Product Detail</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="goToHomePageFromDetail()"><ion-icon name="mic" color="light"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="product-group">
+            <h2 class="text-secondary">
+              <span class="small-size-text">{{productData.name}}</span>
+            </h2>
+            <div class="discount-sticker">
+              <p class="text-bold text-center spacing-small">
+                24%
+                <br>
+                off
+              </p>
+            </div>
+            <div>
+            <ion-slides class="image-block" pager>
+                <ion-slide>
+                  <a href="#">
+                      <img [src] = "productData.image"/>
+                  </a>
+                </ion-slide>
+                <ion-slide>
+                  <a href="#">
+                      <img [src] = "productData.image"/>
+                  </a>
+                </ion-slide>
+            </ion-slides>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" size-md>
+          <div class="price-block">
+              <span class="currency">$</span>
+              <span class="buying-price">8999</span>
+          </div>
+          <div>
+              <span class="old-price text-secondary">
+                <span class="text-secoundry">
+                  MRP:
+                </span>
+                <span class="text-strike">
+                  11999
+                </span>
+              </span>
+              <span class="save-price">
+                Save 2000
+              </span>
+          </div>
+          <div class="star-icons">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+            <span>
+              <a href="#">(243)</a>
+            </span>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <h2>About this item</h2>
+          <div class="about-item-block">
+            <ion-card>
+              
+              <ion-card-content>
+                <!-- <ion-title>Manufacturer</ion-title>
+                <img [src] = "productData.image"/> -->
+                <div class="box">
+                    <h3>Description</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    </p>
+                </div>
+              </ion-card-content>
+
+              <ion-card-content>
+                  <!-- <ion-title>Manufacturer</ion-title>
+                  <img [src] = "productData.image"/> -->
+                  <div class="box">
+                      <h3>Features & details</h3>
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                      </p>
+                  </div>
+                </ion-card-content>
+
+                <ion-card-content>
+                    <!-- <ion-title>Manufacturer</ion-title>
+                    <img [src] = "productData.image"/> -->
+                    <div class="box">
+                        <h3>Warrenty Information</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        </p>
+                    </div>
+                </ion-card-content>
+
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Buy with these items to get 10 % off</h2>
+          <div class="bundle-products">
+            <ion-card>
+              <ion-card-content>
+                <ion-list lines="none">
+                  <ion-item>
+                    <ion-row>
+                      <ion-col col-3>
+                        <div class="bundle-products-image-container">
+                          <img [src] = "productData.image"/>
+                        </div>
+                      </ion-col>
+                      <ion-col col-9>
+                        <div class="right-container">
+                          <div class="row">
+                            <span class="list-product-title">
+                              {{productData.name}}
+                            </span>
+                          </div>
+                          
+                          <div class="row star-icons">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <span>
+                              <a href="#">(243)</a>
+                            </span>
+                          </div>
+                          <div class="row">
+                            <span class="save-price">$8999</span>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="plus-sympol">
+                          <span>+</span>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-row>
+                      <ion-col col-3>
+                        <div class="bundle-products-image-container">
+                          <img [src] = "productData.image"/>
+                        </div>
+                      </ion-col>
+                      <ion-col col-9>
+                        <div class="right-container">
+                          <div class="row">
+                            <span class="list-product-title">
+                              {{productData.name}}
+                            </span>
+                          </div>
+                          
+                          <div class="row star-icons">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <span>
+                              <a href="#">(243)</a>
+                            </span>
+                          </div>
+                          <div class="row">
+                            <span class="save-price">$8999</span>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                        <div class="plus-sympol">
+                          <span>+</span>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-row>
+                      <ion-col col-3>
+                        <div class="bundle-products-image-container">
+                          <img [src] = "productData.image"/>
+                        </div>
+                      </ion-col>
+                      <ion-col col-9>
+                        <div class="right-container">
+                          <div class="row">
+                            <span class="list-product-title">
+                              {{productData.name}}
+                            </span>
+                          </div>
+                          
+                          <div class="row star-icons">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <span>
+                              <a href="#">(243)</a>
+                            </span>
+                          </div>
+                          <div class="row">
+                            <span class="save-price">$8999</span>
+                          </div>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-item>
+                </ion-list>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2>Location</h2>
+          <div class="product-location-block">
+            <ion-card>
+              <ion-card-content>
+                <ion-card-title>
+                    {{productData.location}}
+                </ion-card-title>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

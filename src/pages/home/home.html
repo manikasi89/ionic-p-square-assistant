@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>
+      Psquare
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+  <!-- <p>Is listening ? : {{ isListening }}</p> -->
+  <ion-card class="custome-card" [ngClass]="{'custome-card-animate': isListening}">
+    <ion-card-content>
+      <button (click)="listen()" ion-button icon-only clear>
+        <div>
+          <ion-icon name="mic" color>
+          </ion-icon>
+        </div>
+      </button>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- // *ngFor="let match of matches -->
+  <ion-card *ngIf="singleMatch" (click)="goToProducts()">
+    <ion-card-content>
+      <p>{{singleMatch}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

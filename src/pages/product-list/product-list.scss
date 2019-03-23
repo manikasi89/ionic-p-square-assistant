@@ -1,0 +1,54 @@
+page-product-list {
+    ion-title{
+        margin-left: -18px !important;
+    }
+    .toolbar-title-md {
+        text-transform: capitalize;
+    }
+    ion-card{
+        padding:10px;
+        .card-title-md{
+            font-size:1.6rem;
+        }
+    }
+    .old-price {
+        font-size: 1.1rem;
+        line-height: 2 !important;
+    }
+    .letter-space {
+        display: inline-block;
+        width: .4em;
+    }
+    .save-price {
+        color: #B12704;
+        font-style: italic;
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    .row {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .buying-price {
+        font-size: 1.8rem;
+        line-height: 1.25;
+        display: inline-block;
+        font-weight: 700;
+        letter-spacing: -1px;
+        color: #B12704!important;
+    }
+
+    .right-container {
+        width: 100%;
+        padding-left: 2%;
+        .list-product-title {
+         color: #0066C0;
+         display: block;
+        }
+      }
+      .star-icons {
+        font-size: 1.6rem !important;
+        color: #ffd829;
+        line-height: 1.7rem !important;
+      }
+}

@@ -1,18 +1,43 @@
 page-home {
+    .banner {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+
+            h2 {
+                font-size: 2.5rem;
+                color: #00e58b;    
+            }
+
+            h3 {
+                font-style: italic;
+                color: #555;
+                font-size: 1.5rem;
+
+                span {
+                    color: #00e58b;   
+                }
+            }
+        }
+    }
     .custome-card, .custome-card-animate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
         margin-bottom: 50px;
         border-radius: 200px;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         box-shadow: 0 0px 13px 0 rgba(0, 0, 0, 0.4);
-        margin-top: calc(100% - 65%);
+        margin-top: calc(100% - 85%);
         &-animate {
             animation: pulse 2s infinite;
         }
         ion-card-content {
-            margin-left: 4px;
-            margin-top: 35px;
             button{
                 font-size: 4em;
                 height: 104px;

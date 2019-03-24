@@ -1,12 +1,25 @@
 <ion-header>
   <ion-navbar color="primary">
+      <ion-buttons left>
+          <button ion-button icon-only><ion-icon name="menu" color="light"></ion-icon></button>
+      </ion-buttons>
     <ion-title text-center>
-      Psquare
+      P-SQUARE
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content text-center>
+  <div class="banner">
+    <div class="container">
+      <h2>
+        Welcome To
+      </h2>
+      <h3>
+        P-SQUARE <span>STORE </span>
+      </h3>
+    </div>
+  </div>
   <!-- <p>Is listening ? : {{ isListening }}</p> -->
   <ion-card class="custome-card" [ngClass]="{'custome-card-animate': isListening}">
     <ion-card-content>
